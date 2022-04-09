@@ -89,3 +89,9 @@ Fruit* Reel::getDownFruit() const
 
 int Reel::getNumberOfFruitsOnReel() const {return this->numberOfFruits_;}
 int Reel::getCentralPosition() const {return centralPosition_;}
+
+Fruit* Reel::getFruitAtPosition(int position) const
+{
+    if(position < 0 || position >= numberOfFruits_)return nullptr;
+    return this->fruits_[position];
+}

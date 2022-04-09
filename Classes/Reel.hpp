@@ -36,6 +36,7 @@ public:
     Fruit* getDownFruit() const;
     int getNumberOfFruitsOnReel() const;
     int getCentralPosition() const;
+    Fruit* getFruitAtPosition(int position) const;
 };
 
 #endif /* Reel_hpp */

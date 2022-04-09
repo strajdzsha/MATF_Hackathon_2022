@@ -17,11 +17,11 @@ class SlotMachine;
 class PayLine
 {
 private:
-    int numberOfFruits_;
+    int numberOfReels_;
     int* positionInReel_;
 public:
     //position in reel can be -1, 0, 1.
-    PayLine(int numberOfFruits, int* positionInReel);
+    PayLine(int numberOfReels, int* positionInReel);
     int findNumberOfConsecutive(SlotMachine* slotMachine);
     string getType(SlotMachine* slotMachine);
 };

@@ -44,6 +44,7 @@ public:
     int getNumberOfReels();
     Fruit* getFruit(int reelId, int positionInReel);
     int calculateWin();
+    Reel** getReels();
 };
 
 #endif /* SlotMachine_hpp */

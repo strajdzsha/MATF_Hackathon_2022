@@ -141,3 +141,5 @@ int SlotMachine::calculateWin()
     }
     return sum;
 }
+
+Reel** SlotMachine::getReels(){return reels_;}

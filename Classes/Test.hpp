@@ -23,6 +23,7 @@ class Test
 {
 public:
     static void main();
+    static SlotMachine* makeSlotMachine();
 };
 
 #endif /* Test_hpp */
