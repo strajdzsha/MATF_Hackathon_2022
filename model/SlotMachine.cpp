@@ -37,6 +37,9 @@ void SlotMachine::spin()
             if(uid(rng) % 2 == 1)by *= -1;
             this->reels_[i]->spin(by);
         }
+        cout << "<------------------------------->\n";
+        this->outputReels();
+        cout << "<------------------------------->\n";
     }
     for(int i = 0; i < this->numberOfReels_; i++)
     {
