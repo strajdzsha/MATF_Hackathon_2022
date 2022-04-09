@@ -21,7 +21,7 @@ class SlotMachine
 {
 private:
     bool threadWorking=false;
-    thread* spinThread;
+    thread* spinThread=nullptr;
     int numberOfReels_;
     Reel** reels_;
     void spin();//function will move all the reels for some small movement, either up or down
