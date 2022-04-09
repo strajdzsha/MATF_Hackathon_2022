@@ -1,27 +1,15 @@
 //
-//  main.cpp
-//  MATFHackathon
+//  Test.cpp
+//  MatHack
 //
 //  Created by Aleksa on 4/9/22.
-//  Copyright © 2022 as. All rights reserved.
 //
 
-#include <iostream>
-#include <thread>
-#include <chrono>
-#include "Reel.hpp"
-#include "Fruit.hpp"
-#include "SlotMachine.hpp"
+#include "Test.hpp"
+#include "PayLine.hpp"
 
-using namespace std;
-using namespace std::chrono;
-
-void foo()
+void Test::main()
 {
-    for(int i = 0; i < 5; i++)cout << "WOW" << endl;
-}
-/*
-int main(int argc, const char * argv[]) {
     Fruit* f[] = {new Fruit1(),new Fruit2(),new Fruit1(),new Fruit2(),new Fruit1(),new Fruit2()};
     Reel* reel = new Reel(6,f);
     reel->randomShuffle();
@@ -56,6 +44,7 @@ int main(int argc, const char * argv[]) {
     slotMachine->spinStop();
     slotMachine->outputReels();
     
-    return 0;
+    int positionInReel[] = {-1,-1,-1,-1,-1};
+    PayLine* payLine = new PayLine(5,positionInReel);
+    cout << "Number of consecutive in first row: " << payLine->findNumberOfConsecutive(slotMachine) << endl;
 }
-*/

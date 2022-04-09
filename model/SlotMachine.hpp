@@ -13,6 +13,7 @@
 #include <thread>
 #include <chrono>
 #include "Reel.hpp"
+#include "Fruit.hpp"
 
 using namespace std;
 using namespace std::chrono;
@@ -32,6 +33,8 @@ public:
     void spinStop();
     static void busyWait(double t);//in seconds
     void outputReels();
+    int getNumberOfReels();
+    Fruit* getFruit(int reelId, int positionInReel);
 };
 
 #endif /* SlotMachine_hpp */

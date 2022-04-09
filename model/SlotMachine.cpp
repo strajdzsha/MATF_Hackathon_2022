@@ -103,3 +103,19 @@ void SlotMachine::outputReels()
         cout << endl;
     }
 }
+
+int SlotMachine::getNumberOfReels()
+{
+    return this->numberOfReels_;
+}
+
+Fruit* SlotMachine::getFruit(int reelId, int positionInReel)
+{
+    if(reelId >= this->numberOfReels_)return nullptr;
+    Reel* reel = this->reels_[reelId];
+    if(reel==nullptr)return nullptr;
+    if(positionInReel == -1)return reel->getUpperFruit();
+    else if(positionInReel == 0)return reel->getCentralFruit();
+    else if(positionInReel == 1)return reel->getDownFruit();
+    return nullptr;
+}
