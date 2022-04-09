@@ -14,9 +14,13 @@
 #include <chrono>
 #include "Reel.hpp"
 #include "Fruit.hpp"
+#include "PayLine.hpp"
+#include "Combination.hpp"
 
 using namespace std;
 using namespace std::chrono;
+
+class PayLine;
 
 class SlotMachine
 {
@@ -26,8 +30,12 @@ private:
     int numberOfReels_;
     Reel** reels_;
     void spin();//function will move all the reels for some small movement, either up or down
+    PayLine** payLines_;
+    Combination** combinations_;
+    int numberOfPayLines_;
+    int numberOfCombinations_;
 public:
-    SlotMachine(int numberOfReels, Reel** reels);
+    SlotMachine(int numberOfReels, Reel** reels, PayLine** payLines, Combination** combinations, int numberOfPayLines, int numberOfCombinations);
     static void spinWrapper(SlotMachine* slotMachine);
     void spinIt();
     void spinStop();
@@ -35,6 +43,7 @@ public:
     void outputReels();
     int getNumberOfReels();
     Fruit* getFruit(int reelId, int positionInReel);
+    int calculateWin();
 };
 
 #endif /* SlotMachine_hpp */

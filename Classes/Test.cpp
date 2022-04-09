@@ -36,7 +36,10 @@ void Test::main()
         reels[i]->randomShuffle();
     }
     
-    SlotMachine* slotMachine = new SlotMachine(5,reels);
+    PayLine* payLines[] = {new PayLine(5, new int[]{0,0,0,0,0}), new PayLine(5, new int[]{-1,-1,-1,-1,-1}), new PayLine(5, new int[]{1,1,1,1,1})};
+    Combination* combinations[] = { new Combination("Fruit1",5, new int[]{0,0,5,10,15}), new Combination("Fruit2",5, new int[]{0,0,50,100,150}) };
+    
+    SlotMachine* slotMachine = new SlotMachine(5, reels, payLines, combinations, 3, 2);
     slotMachine->outputReels();
     
     auto start = high_resolution_clock::now();
@@ -60,5 +63,7 @@ void Test::main()
         cout << "Won: " << comb->getAward(payLine->findNumberOfConsecutive(slotMachine)) << endl;
     }
     else {cout << "No winnings" << endl;}
+    
+    cout << "Won money: " << slotMachine->calculateWin() << endl;
     
 }

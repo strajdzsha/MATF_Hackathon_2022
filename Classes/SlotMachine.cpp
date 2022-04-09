@@ -12,15 +12,19 @@ static std::random_device rd; // random device engine, usually based on /dev/ran
 // initialize Mersennes' twister using rd to generate the seed
 static std::mt19937 rng{rd()};
 
-SlotMachine::SlotMachine(int numberOfReels, Reel** reels)
+SlotMachine::SlotMachine(int numberOfReels, Reel** reels, PayLine** payLines, Combination** combinations, int numberOfPayLines, int numberOfCombinations)
 {
     this->numberOfReels_ = numberOfReels;
     this->reels_ = reels;
+    this->payLines_ = payLines;
+    this->combinations_ = combinations;
+    this->numberOfPayLines_ = numberOfPayLines;
+    this->numberOfCombinations_ = numberOfCombinations;
 }
 
 void SlotMachine::spin()
 {
-    int finalState[this->numberOfReels_];
+    int* finalState = new int[this->numberOfReels_];//[this->numberOfReels_];
     for(int i = 0; i < this->numberOfReels_; i++)
     {
         static std::uniform_int_distribution<int> uid(0,this->reels_[i]->getNumberOfFruitsOnReel()-1);
@@ -45,6 +49,7 @@ void SlotMachine::spin()
     {
         this->reels_[i]->spin(finalState[i] - this->reels_[i]->getCentralPosition());
     }
+    delete[] finalState;
 }
 
 void SlotMachine::spinWrapper(SlotMachine *slotMachine)
@@ -118,4 +123,21 @@ Fruit* SlotMachine::getFruit(int reelId, int positionInReel)
     else if(positionInReel == 0)return reel->getCentralFruit();
     else if(positionInReel == 1)return reel->getDownFruit();
     return nullptr;
+}
+
+int SlotMachine::calculateWin()
+{
+    if(payLines_ == nullptr || combinations_ == nullptr)return 0;
+    int sum = 0;
+    for(int i = 0; i < numberOfPayLines_; i++)
+    {
+        for(int j = 0; j < numberOfCombinations_; j++)
+        {
+            if(payLines_[i]->getType(this) != combinations_[j]->getType())continue;
+            //sum += payLines_[i]->findNumberOfConsecutive(this);
+            sum += combinations_[j]->getAward(payLines_[i]->findNumberOfConsecutive(this));
+            break;
+        }
+    }
+    return sum;
 }

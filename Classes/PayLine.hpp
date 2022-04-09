@@ -12,6 +12,8 @@
 #include "SlotMachine.hpp"
 #include "Reel.hpp"
 
+class SlotMachine;
+
 class PayLine
 {
 private:
