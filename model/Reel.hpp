@@ -22,7 +22,7 @@ class Reel
 private:
     int numberOfFruits_;
     Fruit** fruits_;
-    int centralPosition_=1;
+    int centralPosition_=0;
 public:
     Reel(int numberOfFruits, Fruit** fruits);
     Reel(int numberOfFruits);
