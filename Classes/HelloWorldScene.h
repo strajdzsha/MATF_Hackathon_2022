@@ -29,12 +29,16 @@
 #include "Test.hpp"
 #include "SlotMachine.hpp"
 
+using namespace std;
+
 class HelloWorld : public cocos2d::Scene
 {
 public:
     static cocos2d::Scene* createScene();
 
     virtual bool init();
+    
+    SlotMachine* slotMachine;
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);

@@ -54,13 +54,15 @@ bool HelloWorld::init()
     Test::main();
     //Test::main();
     
-    SlotMachine* machine = Test::makeSlotMachine();
+    //SlotMachine* machine = Test::makeSlotMachine();
+    
+    this->slotMachine = Test::makeSlotMachine();
     
     cout << "~~~~~~~~~~~~~~~~~~~HELLO FROM HELLOWORLDSCENE~~~~~~~~~~~~~~~~~~\n";
-    machine->spinIt();
+    slotMachine->spinIt();
     SlotMachine::busyWait(2.0);
-    machine->spinStop();
-    cout << "WON: " << machine->calculateWin() << endl;
+    slotMachine->spinStop();
+    cout << "WON: " << slotMachine->calculateWin() << endl;
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
     
     //<<<><><><><><><><><>MY TEST CODE<><><><><><><><><><><><><>
