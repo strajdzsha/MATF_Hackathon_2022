@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/editor-support/cocostudio/DictionaryHelper.cpp \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformMacros.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/ccConfig.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformConfig.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformDefine.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/mac/CCPlatformDefine-mac.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/editor-support/cocostudio/DictionaryHelper.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/document-wrapper.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/rapidjson.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/document.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/reader.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/allocators.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/stream.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/encodings.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/encodedstream.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/memorystream.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/meta.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/../rapidjson.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/stack.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/../allocators.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/swap.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/strtod.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/ieee754.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/biginteger.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/diyfp.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/pow10.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/error/error.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/error/../rapidjson.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/strfunc.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/external/recast/../json/internal/../stream.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/editor-support/cocostudio/CocosStudioExport.h

@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/ProgramMTL.mm \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/ProgramMTL.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/../Program.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/../Macros.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/CCRef.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformMacros.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/ccConfig.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformConfig.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformDefine.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/mac/CCPlatformDefine-mac.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/../Types.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/../ShaderCache.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/ShaderModule.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/ShaderModuleMTL.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/metal/../ShaderModule.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/ccMacros.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/CCConsole.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCStdC.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/mac/CCStdC-mac.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/ccRandom.h

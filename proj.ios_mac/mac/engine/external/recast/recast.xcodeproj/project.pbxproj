@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		14CF92B4E37E4DFCAF86C006 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7E5542045EEB4AE283D09B61 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				8AAC6B18B2414D12AEAEBB76 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		74CC8B143C3E4941A13EDCC2 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB61C2F883434E9B9E499296 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				4F19EBD27C084344AD8776FD /* CMake Rules */,
+			);
+			dependencies = (
+				61010F5DC8ED46F18F80EAD9 /* PBXTargetDependency */,
+				1D2AAB7D351D48DC9B25A98A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		122A7E9277144A46896A31AF /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourObstacleAvoidance.cpp */ = {isa = PBXBuildFile; fileRef = 48D69337876E47C79960F1FE /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourObstacleAvoidance.cpp */; };
+		123EFAE433F04514BFE07572 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMesh.cpp */ = {isa = PBXBuildFile; fileRef = 283B83B2909649FFB6D72E59 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMesh.cpp */; };
+		1CD795EFFEEB4F488A0AFE50 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DebugDraw.cpp */ = {isa = PBXBuildFile; fileRef = F0166F676B0443959196B852 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DebugDraw.cpp */; };
+		1FB80B62500944068A38A16C /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathQueue.cpp */ = {isa = PBXBuildFile; fileRef = AECD6BCBAAC4483F99F83439 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathQueue.cpp */; };
+		2F03DF39E2B549E087EF1760 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourCrowd.cpp */ = {isa = PBXBuildFile; fileRef = 521341EF0273448B87DBA08D /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourCrowd.cpp */; };
+		44406AFAB10A4C1B9969CE1A /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCacheBuilder.cpp */ = {isa = PBXBuildFile; fileRef = DA9947B5EEC3489EAF593E0E /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCacheBuilder.cpp */; };
+		46A3B3A513B046D298AC2B08 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshQuery.cpp */ = {isa = PBXBuildFile; fileRef = 5AFD7BD7D6034B52938DDB32 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshQuery.cpp */; };
+		69DD3BF055064CE7A3B9E373 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourLocalBoundary.cpp */ = {isa = PBXBuildFile; fileRef = 97750A0846884E0D9C8A8353 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourLocalBoundary.cpp */; };
+		6E9EAD5104464DD595AF7DAE /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourAlloc.cpp */ = {isa = PBXBuildFile; fileRef = 0EA496CBCBE544BF8151BF1A /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourAlloc.cpp */; };
+		9B538BEFC48344F8BD0AA743 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathCorridor.cpp */ = {isa = PBXBuildFile; fileRef = BBEAF793B6564803BF6E5BF6 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathCorridor.cpp */; };
+		C206CE4F690C4C999FD0E2B0 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DetourDebugDraw.cpp */ = {isa = PBXBuildFile; fileRef = 2B92F08F6AAC45E4877C86B1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DetourDebugDraw.cpp */; };
+		C2CF34ECD95B4703952F2699 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshBuilder.cpp */ = {isa = PBXBuildFile; fileRef = 06817A42BEDE44E29B682FF5 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshBuilder.cpp */; };
+		C8383B159E0546DF8BB79161 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2189A5F77057477EA9249C3B /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/CMakeLists.txt */; };
+		D2589CCA36E44EE48A3DB87F /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNode.cpp */ = {isa = PBXBuildFile; fileRef = 97431F15AEFC495EA7962520 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNode.cpp */; };
+		E75FBF53C0FA441AA9AC994C /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCache.cpp */ = {isa = PBXBuildFile; fileRef = 7902235A01774497B1D7C601 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCache.cpp */; };
+		EB9A325D67454915B5D0E18C /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourProximityGrid.cpp */ = {isa = PBXBuildFile; fileRef = DBB66B9B8240451EAEA544DA /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourProximityGrid.cpp */; };
+		FAE3D3484F9F411996C753B1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourCommon.cpp */ = {isa = PBXBuildFile; fileRef = B568FD9288FA4134928805A1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourCommon.cpp */; };
+		FEFAF5FB479C4CE39893F842 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/fastlz/fastlz.c */ = {isa = PBXBuildFile; fileRef = A1B9DE21CD964A8B8320CD52 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/fastlz/fastlz.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		083B113F34BF40AB8A1F5895 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		1270C991277C48658438DD43 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		28F9F629986A4B869A93866C /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		41E65EDB49F4450A996AAF1A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		12BBCF0CBC3B42DFAF146C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 861DA157A53B4DF68EE4B4A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14CF92B4E37E4DFCAF86C006;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B43B2486F514ECC8930FAF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 861DA157A53B4DF68EE4B4A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14CF92B4E37E4DFCAF86C006;
+			remoteInfo = ZERO_CHECK;
+		};
+		C889C7580F7248D2B1204CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 861DA157A53B4DF68EE4B4A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93748F7960B14F298C19CE44;
+			remoteInfo = ext_recast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06817A42BEDE44E29B682FF5 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshBuilder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourNavMeshBuilder.cpp; path = Detour/DetourNavMeshBuilder.cpp; sourceTree = SOURCE_ROOT; };
+		0EA496CBCBE544BF8151BF1A /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourAlloc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourAlloc.cpp; path = Detour/DetourAlloc.cpp; sourceTree = SOURCE_ROOT; };
+		2189A5F77057477EA9249C3B /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		283B83B2909649FFB6D72E59 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourNavMesh.cpp; path = Detour/DetourNavMesh.cpp; sourceTree = SOURCE_ROOT; };
+		2B92F08F6AAC45E4877C86B1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DetourDebugDraw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourDebugDraw.cpp; path = DebugUtils/DetourDebugDraw.cpp; sourceTree = SOURCE_ROOT; };
+		48D69337876E47C79960F1FE /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourObstacleAvoidance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourObstacleAvoidance.cpp; path = DetourCrowd/DetourObstacleAvoidance.cpp; sourceTree = SOURCE_ROOT; };
+		521341EF0273448B87DBA08D /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourCrowd.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourCrowd.cpp; path = DetourCrowd/DetourCrowd.cpp; sourceTree = SOURCE_ROOT; };
+		55D7A1EE398141488206BA8E /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5AFD7BD7D6034B52938DDB32 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshQuery.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourNavMeshQuery.cpp; path = Detour/DetourNavMeshQuery.cpp; sourceTree = SOURCE_ROOT; };
+		7902235A01774497B1D7C601 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourTileCache.cpp; path = DetourTileCache/DetourTileCache.cpp; sourceTree = SOURCE_ROOT; };
+		91423CA8091F4CF0B55BB4F2 /* ext_recast */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libext_recast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		97431F15AEFC495EA7962520 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourNode.cpp; path = Detour/DetourNode.cpp; sourceTree = SOURCE_ROOT; };
+		97750A0846884E0D9C8A8353 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourLocalBoundary.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourLocalBoundary.cpp; path = DetourCrowd/DetourLocalBoundary.cpp; sourceTree = SOURCE_ROOT; };
+		A1B9DE21CD964A8B8320CD52 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/fastlz/fastlz.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = fastlz.c; path = fastlz/fastlz.c; sourceTree = SOURCE_ROOT; };
+		AECD6BCBAAC4483F99F83439 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathQueue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourPathQueue.cpp; path = DetourCrowd/DetourPathQueue.cpp; sourceTree = SOURCE_ROOT; };
+		B568FD9288FA4134928805A1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourCommon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourCommon.cpp; path = Detour/DetourCommon.cpp; sourceTree = SOURCE_ROOT; };
+		BBEAF793B6564803BF6E5BF6 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathCorridor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourPathCorridor.cpp; path = DetourCrowd/DetourPathCorridor.cpp; sourceTree = SOURCE_ROOT; };
+		DA9947B5EEC3489EAF593E0E /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCacheBuilder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourTileCacheBuilder.cpp; path = DetourTileCache/DetourTileCacheBuilder.cpp; sourceTree = SOURCE_ROOT; };
+		DBB66B9B8240451EAEA544DA /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourProximityGrid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DetourProximityGrid.cpp; path = DetourCrowd/DetourProximityGrid.cpp; sourceTree = SOURCE_ROOT; };
+		F0166F676B0443959196B852 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DebugDraw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DebugDraw.cpp; path = DebugUtils/DebugDraw.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		073298075F954585A9E7E7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69C23E3F77984057ADDCEFD3 /* ext_recast */ = {
+			isa = PBXGroup;
+			children = (
+				7254BF4C0B1E4DCEA710FC35 /* Source Files */,
+				2189A5F77057477EA9249C3B /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/CMakeLists.txt */,
+			);
+			name = ext_recast;
+			sourceTree = "<group>";
+		};
+		7254BF4C0B1E4DCEA710FC35 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0166F676B0443959196B852 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DebugDraw.cpp */,
+				2B92F08F6AAC45E4877C86B1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DetourDebugDraw.cpp */,
+				0EA496CBCBE544BF8151BF1A /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourAlloc.cpp */,
+				B568FD9288FA4134928805A1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourCommon.cpp */,
+				283B83B2909649FFB6D72E59 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMesh.cpp */,
+				06817A42BEDE44E29B682FF5 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshBuilder.cpp */,
+				5AFD7BD7D6034B52938DDB32 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshQuery.cpp */,
+				97431F15AEFC495EA7962520 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNode.cpp */,
+				521341EF0273448B87DBA08D /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourCrowd.cpp */,
+				97750A0846884E0D9C8A8353 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourLocalBoundary.cpp */,
+				48D69337876E47C79960F1FE /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourObstacleAvoidance.cpp */,
+				BBEAF793B6564803BF6E5BF6 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathCorridor.cpp */,
+				AECD6BCBAAC4483F99F83439 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathQueue.cpp */,
+				DBB66B9B8240451EAEA544DA /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourProximityGrid.cpp */,
+				7902235A01774497B1D7C601 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCache.cpp */,
+				DA9947B5EEC3489EAF593E0E /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCacheBuilder.cpp */,
+				A1B9DE21CD964A8B8320CD52 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/fastlz/fastlz.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		78D8F051A31A463E8E43DA0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91423CA8091F4CF0B55BB4F2 /* ext_recast */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91270DA313994A90BDAA88C2 = {
+			isa = PBXGroup;
+			children = (
+				BE4509336348485191F4CCB8 /* External */,
+				EAF999BF553A4564BA5DC23C /* ALL_BUILD */,
+				78D8F051A31A463E8E43DA0B /* Products */,
+				BC32A6AFF1BC4373BCA9C90E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC32A6AFF1BC4373BCA9C90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE4509336348485191F4CCB8 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				69C23E3F77984057ADDCEFD3 /* ext_recast */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		E73948B6DC904F279CB1622E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		EAF999BF553A4564BA5DC23C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E73948B6DC904F279CB1622E /* CMake Rules */,
+				55D7A1EE398141488206BA8E /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93748F7960B14F298C19CE44 /* ext_recast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AE90ADC9E0244F5A9C1E2DD /* Build configuration list for PBXNativeTarget "ext_recast" */;
+			buildPhases = (
+				BF9E75A444514CEC838216E9 /* Sources */,
+				073298075F954585A9E7E7F0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54017239BC9F4F8EA3001128 /* PBXTargetDependency */,
+			);
+			name = ext_recast;
+			productName = ext_recast;
+			productReference = 91423CA8091F4CF0B55BB4F2 /* ext_recast */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		861DA157A53B4DF68EE4B4A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1140;
+			};
+			buildConfigurationList = 80668A975E034A74880E88F6 /* Build configuration list for PBXProject "recast" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				1270C991277C48658438DD43 /* Debug */,
+				083B113F34BF40AB8A1F5895 /* Release */,
+				41E65EDB49F4450A996AAF1A /* MinSizeRel */,
+				28F9F629986A4B869A93866C /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 91270DA313994A90BDAA88C2;
+			projectDirPath = ../../../../../cocos2d/external/recast;
+			projectRoot = "";
+			targets = (
+				74CC8B143C3E4941A13EDCC2 /* ALL_BUILD */,
+				14CF92B4E37E4DFCAF86C006 /* ZERO_CHECK */,
+				93748F7960B14F298C19CE44 /* ext_recast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4F19EBD27C084344AD8776FD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast -f /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		8AAC6B18B2414D12AEAEBB76 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast -f /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF9E75A444514CEC838216E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD795EFFEEB4F488A0AFE50 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DebugDraw.cpp */,
+				C206CE4F690C4C999FD0E2B0 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DebugUtils/DetourDebugDraw.cpp */,
+				6E9EAD5104464DD595AF7DAE /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourAlloc.cpp */,
+				FAE3D3484F9F411996C753B1 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourCommon.cpp */,
+				123EFAE433F04514BFE07572 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMesh.cpp */,
+				C2CF34ECD95B4703952F2699 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshBuilder.cpp */,
+				46A3B3A513B046D298AC2B08 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNavMeshQuery.cpp */,
+				D2589CCA36E44EE48A3DB87F /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/Detour/DetourNode.cpp */,
+				2F03DF39E2B549E087EF1760 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourCrowd.cpp */,
+				69DD3BF055064CE7A3B9E373 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourLocalBoundary.cpp */,
+				122A7E9277144A46896A31AF /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourObstacleAvoidance.cpp */,
+				9B538BEFC48344F8BD0AA743 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathCorridor.cpp */,
+				1FB80B62500944068A38A16C /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourPathQueue.cpp */,
+				EB9A325D67454915B5D0E18C /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourCrowd/DetourProximityGrid.cpp */,
+				E75FBF53C0FA441AA9AC994C /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCache.cpp */,
+				44406AFAB10A4C1B9969CE1A /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/DetourTileCache/DetourTileCacheBuilder.cpp */,
+				FEFAF5FB479C4CE39893F842 /* /Users/mbp/Desktop/MatHack/cocos2d/external/recast/fastlz/fastlz.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D2AAB7D351D48DC9B25A98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93748F7960B14F298C19CE44 /* ext_recast */;
+			targetProxy = C889C7580F7248D2B1204CAE /* PBXContainerItemProxy */;
+		};
+		54017239BC9F4F8EA3001128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14CF92B4E37E4DFCAF86C006 /* ZERO_CHECK */;
+			targetProxy = 12BBCF0CBC3B42DFAF146C35 /* PBXContainerItemProxy */;
+		};
+		61010F5DC8ED46F18F80EAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14CF92B4E37E4DFCAF86C006 /* ZERO_CHECK */;
+			targetProxy = 8B43B2486F514ECC8930FAF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04F14C0A5E214B98A8DBABB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast/build;
+			};
+			name = Release;
+		};
+		04F35CB05ECE471C90F13656 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast/build;
+			};
+			name = MinSizeRel;
+		};
+		0F45D74F4C19477294CEA29C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1A38DD4327554D99A427D3D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast/build;
+			};
+			name = Debug;
+		};
+		229CEAFF721C47C185AC1DAD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mbp/Desktop/MatHack/cocos2d/external/recast/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("'-std=gnu99' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "'-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ext_recast;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		71A734660DC4434490CFF098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mbp/Desktop/MatHack/cocos2d/external/recast/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("'-std=gnu99' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "'-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ext_recast;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		847F9F1E1732431BB3746E3F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mbp/Desktop/MatHack/cocos2d/external/recast/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("'-std=gnu99' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "'-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ext_recast;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8F610495E6744257806B8947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9770A5DF918244358BC0CDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C0BC93E6A2C04C2DA55864EA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C1AF239E882F4EA9A504F1C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D06FB7E2E8634D639C54ED78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D5929BFBAA184257BBFA781C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/mbp/Desktop/MatHack/cocos2d/external/recast/..,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("'-std=gnu99' ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "'-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ext_recast;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DEB1008B3D234C69AE275F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		EA80C675EC764DD798F70770 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk;
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast/build;
+			};
+			name = RelWithDebInfo;
+		};
+		F37FD443AD4E4A5F9D4E17B9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/mbp/Desktop/MatHack/proj.ios_mac/mac/engine/external/recast;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AE90ADC9E0244F5A9C1E2DD /* Build configuration list for PBXNativeTarget "ext_recast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5929BFBAA184257BBFA781C /* Debug */,
+				71A734660DC4434490CFF098 /* Release */,
+				847F9F1E1732431BB3746E3F /* MinSizeRel */,
+				229CEAFF721C47C185AC1DAD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7E5542045EEB4AE283D09B61 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9770A5DF918244358BC0CDBE /* Debug */,
+				C1AF239E882F4EA9A504F1C3 /* Release */,
+				C0BC93E6A2C04C2DA55864EA /* MinSizeRel */,
+				0F45D74F4C19477294CEA29C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80668A975E034A74880E88F6 /* Build configuration list for PBXProject "recast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A38DD4327554D99A427D3D4 /* Debug */,
+				04F14C0A5E214B98A8DBABB4 /* Release */,
+				04F35CB05ECE471C90F13656 /* MinSizeRel */,
+				EA80C675EC764DD798F70770 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB61C2F883434E9B9E499296 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F610495E6744257806B8947 /* Debug */,
+				DEB1008B3D234C69AE275F2E /* Release */,
+				F37FD443AD4E4A5F9D4E17B9 /* MinSizeRel */,
+				D06FB7E2E8634D639C54ED78 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 861DA157A53B4DF68EE4B4A9 /* Project object */;
+}

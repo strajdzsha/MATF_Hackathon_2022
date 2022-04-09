@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/Device.cpp \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/Device.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/Macros.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/Types.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/RenderPipelineDescriptor.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/VertexLayout.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/CCRef.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformMacros.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/ccConfig.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformConfig.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/CCPlatformDefine.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/platform/mac/CCPlatformDefine-mac.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/ProgramState.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/CCEventListenerCustom.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/CCEventListener.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/Program.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/ShaderCache.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/ShaderModule.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/RenderPassDescriptor.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/Texture.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/DepthStencilState.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/ProgramCache.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/renderer/backend/DeviceInfo.h
