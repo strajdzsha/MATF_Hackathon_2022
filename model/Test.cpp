@@ -13,9 +13,13 @@ void Test::main()
     Fruit* f[] = {new Fruit1(),new Fruit2(),new Fruit1(),new Fruit2(),new Fruit1(),new Fruit2()};
     Reel* reel = new Reel(6,f);
     reel->randomShuffle();
+    cout << "<<<<<<<<<<<<<<<BEFORE SPINS>>>>>>>>>>>>>>\n";
     reel->outputReel();
-    reel->spin(2);
+    reel->spin(3);
     reel->spin(-1);
+    cout << "<<<<<<<<<<<<<<<AFTER  SPINS>>>>>>>>>>>>>>\n";
+    reel->outputReel();
+    cout << "<><><><><>><><><><><<>><><><><><><><><><<\n";
     cout << reel->getUpperFruit()->getType() << endl;
     cout << reel->getCentralFruit()->getType() << endl;
     cout << reel->getDownFruit()->getType() << endl;
