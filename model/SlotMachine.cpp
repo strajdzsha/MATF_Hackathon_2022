@@ -23,7 +23,7 @@ void SlotMachine::spin()
     int finalState[this->numberOfReels_];
     for(int i = 0; i < this->numberOfReels_; i++)
     {
-        static std::uniform_int_distribution<int> uid(2,this->reels_[i]->getNumberOfFruitsOnReel()-2);
+        static std::uniform_int_distribution<int> uid(0,this->reels_[i]->getNumberOfFruitsOnReel()-1);
         finalState[i] = uid(rng);
         cout << "Generating final state for: " << i << " outputs " << finalState[i] << endl;
     }
@@ -32,7 +32,7 @@ void SlotMachine::spin()
         busyWait(0.2);
         for(int i = 0; i < this->numberOfReels_; i++)
         {
-            static std::uniform_int_distribution<int> uid(2,this->reels_[i]->getNumberOfFruitsOnReel()-2);
+            static std::uniform_int_distribution<int> uid(1,this->reels_[i]->getNumberOfFruitsOnReel()-1);
             int by = uid(rng);
             if(uid(rng) % 2 == 1)by *= -1;
             this->reels_[i]->spin(by);
