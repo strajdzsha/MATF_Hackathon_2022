@@ -99,6 +99,8 @@
 		10D00B9028020BF100874973 /* PayLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B8428020BF000874973 /* PayLine.cpp */; };
 		10D00B9128020BF100874973 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B8528020BF100874973 /* Test.cpp */; };
 		10D00B9228020BF100874973 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B8528020BF100874973 /* Test.cpp */; };
+		10D00B9528021C2C00874973 /* Combination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B9328021C2C00874973 /* Combination.cpp */; };
+		10D00B9628021C2C00874973 /* Combination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B9328021C2C00874973 /* Combination.cpp */; };
 		10FFB3175A0C47F392820F99 /* CCCustomCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4399C97C4F4841048CD8D9F8 /* CCCustomCommand.cpp */; };
 		111BA22F36824F6CACE98E12 /* CCOBB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C746970CD95D4A0AB92DE9E7 /* CCOBB.cpp */; };
 		11B4300026D04DB485F1E78F /* BufferManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD5EDCD62444819A9178CA /* BufferManager.mm */; };
@@ -1108,6 +1110,8 @@
 		10D00B8428020BF000874973 /* PayLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PayLine.cpp; path = Classes/PayLine.cpp; sourceTree = "<group>"; };
 		10D00B8528020BF100874973 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Test.cpp; path = Classes/Test.cpp; sourceTree = "<group>"; };
 		10D00B8628020BF100874973 /* Reel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Reel.hpp; path = Classes/Reel.hpp; sourceTree = "<group>"; };
+		10D00B9328021C2C00874973 /* Combination.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Combination.cpp; path = Classes/Combination.cpp; sourceTree = "<group>"; };
+		10D00B9428021C2C00874973 /* Combination.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Combination.hpp; path = Classes/Combination.hpp; sourceTree = "<group>"; };
 		1106F7B3DE2D4E36B930705F /* CCPUEventHandler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUEventHandler.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUEventHandler.cpp; sourceTree = SOURCE_ROOT; };
 		11B6E4D725D34E4684E364B4 /* CCAnimation3D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCAnimation3D.h; path = cocos2d/cocos/3d/CCAnimation3D.h; sourceTree = SOURCE_ROOT; };
 		11B8F366C4654B3489A9D67C /* CCPUTranslateManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUTranslateManager.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUTranslateManager.cpp; sourceTree = SOURCE_ROOT; };
@@ -3186,6 +3190,8 @@
 				964E539ABF014F5CA85D510B /* AppDelegate.h */,
 				D5A557FCDB5D49EE9EED1EE6 /* HelloWorldScene.cpp */,
 				32AE4BBF97644BCEB30A76E9 /* HelloWorldScene.h */,
+				10D00B9328021C2C00874973 /* Combination.cpp */,
+				10D00B9428021C2C00874973 /* Combination.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -4643,6 +4649,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D00B9128020BF100874973 /* Test.cpp in Sources */,
+				10D00B9528021C2C00874973 /* Combination.cpp in Sources */,
 				1B9607C7E08C4916AC453188 /* AppDelegate.cpp in Sources */,
 				10D00B8B28020BF100874973 /* SlotMachine.cpp in Sources */,
 				C6D1331B99F24C5286EFBA64 /* HelloWorldScene.cpp in Sources */,
@@ -5000,6 +5007,7 @@
 				00EE540C228B44319AE928A9 /* CCMeshCommand.cpp in Sources */,
 				C992CDFBFF87481BA244B336 /* CCPass.cpp in Sources */,
 				17C23ACBD5C944778D1030A8 /* CCQuadCommand.cpp in Sources */,
+				10D00B9628021C2C00874973 /* Combination.cpp in Sources */,
 				1A732A61BC0F460B98B47E48 /* CCRenderCommand.cpp in Sources */,
 				CAB584636BF54B9CB6BCBBCD /* CCRenderState.cpp in Sources */,
 				CFFF1C2BB65141088A0C88C4 /* CCRenderer.cpp in Sources */,

@@ -21,6 +21,7 @@ public:
     //position in reel can be -1, 0, 1.
     PayLine(int numberOfFruits, int* positionInReel);
     int findNumberOfConsecutive(SlotMachine* slotMachine);
+    string getType(SlotMachine* slotMachine);
 };
 
 #endif /* PayLine_hpp */

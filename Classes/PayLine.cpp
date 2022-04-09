@@ -26,3 +26,11 @@ int PayLine::findNumberOfConsecutive(SlotMachine* slotMachine)
     }
     return slotMachine->getNumberOfReels();
 }
+
+string PayLine::getType(SlotMachine* slotMachine)
+{
+    if(slotMachine->getNumberOfReels() != this->numberOfFruits_)return "";
+    Fruit* f = slotMachine->getFruit(0, this->positionInReel_[0]);
+    if(f==nullptr)return "";
+    return f->getType();
+}

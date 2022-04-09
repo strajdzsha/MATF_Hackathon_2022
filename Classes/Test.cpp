@@ -7,6 +7,7 @@
 
 #include "Test.hpp"
 #include "PayLine.hpp"
+#include "Combination.hpp"
 
 void Test::main()
 {
@@ -51,4 +52,13 @@ void Test::main()
     int positionInReel[] = {-1,-1,-1,-1,-1};
     PayLine* payLine = new PayLine(5,positionInReel);
     cout << "Number of consecutive in first row: " << payLine->findNumberOfConsecutive(slotMachine) << endl;
+    cout << "Type of Pay Line " << payLine->getType(slotMachine) << endl;
+    
+    Combination* comb = new Combination("Fruit1", 5, new int[]{0,0,5,10,20});
+    if(payLine->getType(slotMachine) == comb->getType())
+    {
+        cout << "Won: " << comb->getAward(payLine->findNumberOfConsecutive(slotMachine)) << endl;
+    }
+    else {cout << "No winnings" << endl;}
+    
 }
