@@ -26,6 +26,8 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "Test.hpp"
+#include "SlotMachine.hpp"
 
 class HelloWorld : public cocos2d::Scene
 {

@@ -23,7 +23,6 @@
  ****************************************************************************/
 
 #include "HelloWorldScene.h"
-#include "Test.hpp"
 //#include "Fruit.hpp"
 
 USING_NS_CC;
@@ -55,6 +54,14 @@ bool HelloWorld::init()
     Test::main();
     //Test::main();
     
+    SlotMachine* machine = Test::makeSlotMachine();
+    
+    cout << "~~~~~~~~~~~~~~~~~~~HELLO FROM HELLOWORLDSCENE~~~~~~~~~~~~~~~~~~\n";
+    machine->spinIt();
+    SlotMachine::busyWait(2.0);
+    machine->spinStop();
+    cout << "WON: " << machine->calculateWin() << endl;
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
     
     //<<<><><><><><><><><>MY TEST CODE<><><><><><><><><><><><><>
 

@@ -203,4 +203,10 @@ dependencies: /Users/mbp/Desktop/MatHack/Classes/AppDelegate.cpp \
   /Users/mbp/Desktop/MatHack/cocos2d/cocos/3d/CCSprite3DMaterial.h \
   /Users/mbp/Desktop/MatHack/cocos2d/cocos/3d/CCTerrain.h \
   /Users/mbp/Desktop/MatHack/cocos2d/cocos/3d/CCVertexAttribBinding.h \
-  /Users/mbp/Desktop/MatHack/Classes/HelloWorldScene.h
+  /Users/mbp/Desktop/MatHack/Classes/HelloWorldScene.h \
+  /Users/mbp/Desktop/MatHack/Classes/Test.hpp \
+  /Users/mbp/Desktop/MatHack/Classes/Reel.hpp \
+  /Users/mbp/Desktop/MatHack/Classes/Fruit.hpp \
+  /Users/mbp/Desktop/MatHack/Classes/SlotMachine.hpp \
+  /Users/mbp/Desktop/MatHack/Classes/PayLine.hpp \
+  /Users/mbp/Desktop/MatHack/Classes/Combination.hpp
