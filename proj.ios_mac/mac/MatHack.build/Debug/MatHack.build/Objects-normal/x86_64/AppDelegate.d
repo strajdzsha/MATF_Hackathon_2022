@@ -209,4 +209,35 @@ dependencies: /Users/mbp/Desktop/MatHack/Classes/AppDelegate.cpp \
   /Users/mbp/Desktop/MatHack/Classes/Fruit.hpp \
   /Users/mbp/Desktop/MatHack/Classes/SlotMachine.hpp \
   /Users/mbp/Desktop/MatHack/Classes/PayLine.hpp \
-  /Users/mbp/Desktop/MatHack/Classes/Combination.hpp
+  /Users/mbp/Desktop/MatHack/Classes/Combination.hpp \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/CocosGUI.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIWidget.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UILayoutParameter.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/GUIExport.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/GUIDefine.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/base/ObjectFactory.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UILayout.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIButton.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UICheckBox.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIAbstractCheckButton.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIRadioButton.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIImageView.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIText.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UITextAtlas.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UILoadingBar.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIScrollView.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIListView.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UISlider.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UITextField.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UITextBMFont.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIPageView.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIHelper.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIRichText.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIHBox.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIVBox.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIRelativeBox.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIScale9Sprite.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIEditBox/UIEditBox.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UILayoutComponent.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UITabControl.h \
+  /Users/mbp/Desktop/MatHack/cocos2d/cocos/editor-support/cocostudio/CocosStudioExtension.h

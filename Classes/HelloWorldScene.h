@@ -28,8 +28,11 @@
 #include "cocos2d.h"
 #include "Test.hpp"
 #include "SlotMachine.hpp"
+#include "ui/CocosGUI.h"
 
 using namespace std;
+using namespace cocos2d;
+using namespace ui;
 
 class HelloWorld : public cocos2d::Scene
 {
@@ -39,6 +42,8 @@ public:
     virtual bool init();
     
     SlotMachine* slotMachine;
+    
+    bool spin=true;
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
