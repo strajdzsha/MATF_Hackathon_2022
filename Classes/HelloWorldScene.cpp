@@ -34,9 +34,9 @@ string getFileNameByType(Fruit* fruit)
     else if (fruit->getType() == "Fruit2") return "cherry.png";
     else if (fruit->getType() == "Fruit3") return "grapes.png";
     else if (fruit->getType() == "Fruit4") return "orange.png";
-    else if (fruit->getType() == "Fruit5") return "lemon.png";
-    else if (fruit->getType() == "FruitS") return "lemon.png";//zameniti
-    return "seven.png";
+    else if (fruit->getType() == "Fruit5") return "watermelon.png";
+    else if (fruit->getType() == "FruitS") return "seven.png";//zameniti
+    return "plum.png";
 }
 
 Sprite* getSpriteByType(Fruit* fruit)
@@ -187,7 +187,7 @@ bool HelloWorld::init()
    /*auto bg = Sprite::create("bgnd.png");
     this->addChild(bg);*/
     
-    Test::testRTP();
+    //Test::testRTP();
     
     // 3. add your codes below...
 
