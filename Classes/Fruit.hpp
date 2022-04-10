@@ -18,6 +18,7 @@ class Fruit
 {
 public:
     virtual string getType() const=0;
+    static Fruit** makeFruitArray(int fruit1Cnt, int fruit2Cnt, int fruit3Cnt, int fruit4Cnt, int fruit5Cnt, int fruitSCnt);
 };
 
 class Fruit1 : public Fruit
@@ -27,6 +28,30 @@ public:
 };
 
 class Fruit2 : public Fruit
+{
+public:
+    string getType() const override;
+};
+
+class Fruit3 : public Fruit
+{
+public:
+    string getType() const override;
+};
+
+class Fruit4 : public Fruit
+{
+public:
+    string getType() const override;
+};
+
+class Fruit5 : public Fruit
+{
+public:
+    string getType() const override;
+};
+
+class FruitS : public Fruit
 {
 public:
     string getType() const override;

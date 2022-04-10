@@ -86,11 +86,19 @@ SlotMachine* Test::makeSlotMachine()
     //Reel(int numberOfFruits, Fruit** fruits);
     //PayLine(int numberOfReels, int* positionInReel);
     int numberOfReels = 5;
+    /*
     Fruit** fruitsForReel1 = new Fruit*[]{new Fruit1(), new Fruit1(), new Fruit2(), new Fruit1(), new Fruit2(), new Fruit1()};
     Fruit** fruitsForReel2 = new Fruit*[]{new Fruit2(), new Fruit2(), new Fruit2(), new Fruit1(), new Fruit1()};
     Fruit** fruitsForReel3 = new Fruit*[]{new Fruit1(), new Fruit1(), new Fruit2(), new Fruit1(), new Fruit2()};
     Fruit** fruitsForReel4 = new Fruit*[]{new Fruit2(), new Fruit2(), new Fruit2(), new Fruit1(), new Fruit2()};
     Fruit** fruitsForReel5 = new Fruit*[]{new Fruit1(), new Fruit1(), new Fruit2(), new Fruit1(), new Fruit2(), new Fruit2(), new Fruit2()};
+     */
+    
+    Fruit** fruitsForReel1 = Fruit::makeFruitArray(5, 4, 5, 5, 5, 1);
+    Fruit** fruitsForReel2 = Fruit::makeFruitArray(4, 4, 3, 5, 5, 1);
+    Fruit** fruitsForReel3 = Fruit::makeFruitArray(5, 3, 5, 4, 5, 1);
+    Fruit** fruitsForReel4 = Fruit::makeFruitArray(3, 4, 5, 5, 5, 1);
+    Fruit** fruitsForReel5 = Fruit::makeFruitArray(6, 4, 5, 5, 5, 1);
     
     int numberOfFruitsForReel1 = 6;
     int numberOfFruitsForReel2 = 5;
@@ -103,6 +111,12 @@ SlotMachine* Test::makeSlotMachine()
     Reel* reel3 = new Reel(numberOfFruitsForReel3, fruitsForReel3);
     Reel* reel4 = new Reel(numberOfFruitsForReel4, fruitsForReel4);
     Reel* reel5 = new Reel(numberOfFruitsForReel5, fruitsForReel5);
+    
+    reel1->randomShuffle();
+    reel2->randomShuffle();
+    reel3->randomShuffle();
+    reel4->randomShuffle();
+    reel5->randomShuffle();
     
     Reel** reels = new Reel*[]{reel1, reel2, reel3, reel4, reel5};
     
@@ -118,6 +132,10 @@ SlotMachine* Test::makeSlotMachine()
     int numberOfCombinations = 2;
     Combination* combination1 = new Combination("Fruit1", numberOfReels, new int[] {0,0,5,10,30});
     Combination* combination2 = new Combination("Fruit2", numberOfReels, new int[] {0,0,20,40,100});
+    Combination* combination3 = new Combination("Fruit3", numberOfReels, new int[] {0,0,10,15,20});
+    Combination* combination4 = new Combination("Fruit4", numberOfReels, new int[] {0,0,13,20,40});
+    Combination* combination5 = new Combination("Fruit5", numberOfReels, new int[] {0,0,2,4,5});
+    Combination* combinationS = new Combination("FruitS", numberOfReels, new int[] {0,0,100,200,300});
     
     Combination** combinations = new Combination*[]{combination1,combination2};
     
