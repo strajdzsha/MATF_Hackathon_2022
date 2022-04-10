@@ -186,7 +186,9 @@ bool HelloWorld::init()
 
    /*auto bg = Sprite::create("bgnd.png");
     this->addChild(bg);*/
-
+    
+    Test::testRTP();
+    
     // 3. add your codes below...
 
     //user
@@ -209,6 +211,7 @@ bool HelloWorld::init()
                             //std::cout << "Button 1 clicked" << std::endl;
                             if(this->spin)
                             {
+                                if(this->usr.getCoins() < betAmount)return;
                                 slotMachine->outputReels();
                                 slotMachine->spinIt();
                                 ((Button*)sender)->setTitleText("STOP");

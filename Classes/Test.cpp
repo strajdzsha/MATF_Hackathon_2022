@@ -138,30 +138,30 @@ SlotMachine* Test::makeSlotMachine()
     PayLine* payLine14 = new PayLine(numberOfReels, new int[] {0,1,0,0,0});
     PayLine* payLine15 = new PayLine(numberOfReels, new int[] {1,1,-1,-1,0});
      */
-    PayLine* payLine1 = new PayLine(numberOfReels, new int[] {-1,-1,-1,-1,-1});//
-    PayLine* payLine2 = new PayLine(numberOfReels, new int[] {0,0,0,0,0});//
-    PayLine* payLine3 = new PayLine(numberOfReels, new int[] {1,1,1,1,1});//
-    PayLine* payLine4 = new PayLine(numberOfReels, new int[] {1,0,1,0,1});//
-    PayLine* payLine5 = new PayLine(numberOfReels, new int[] {-1,0,-1,0,-1});//
-    PayLine* payLine6 = new PayLine(numberOfReels, new int[] {1,1,0,1,1});//
-    PayLine* payLine7 = new PayLine(numberOfReels, new int[] {0,0,-1,-1,-1});//
-    PayLine* payLine8 = new PayLine(numberOfReels, new int[] {1,-1,-1,0,-1});
-    PayLine* payLine9 = new PayLine(numberOfReels, new int[] {1,1,-1,1,-1});
-    PayLine* payLine10 = new PayLine(numberOfReels, new int[] {-1,1,1,1,-1});
-    PayLine* payLine11 = new PayLine(numberOfReels, new int[] {-1,-1,0,1,0});
-    PayLine* payLine12 = new PayLine(numberOfReels, new int[] {-1,0,1,1,0});
-    PayLine* payLine13 = new PayLine(numberOfReels, new int[] {0,-1,1,1,1});
-    PayLine* payLine14 = new PayLine(numberOfReels, new int[] {0,1,-1,0,0});
-    PayLine* payLine15 = new PayLine(numberOfReels, new int[] {-1,0,0,0,0});
+    PayLine* payLine1 = new PayLine(numberOfReels, new int[] {-1,-1,-1,-1,-1});//1
+    PayLine* payLine2 = new PayLine(numberOfReels, new int[] {0,0,0,0,0});//2
+    PayLine* payLine3 = new PayLine(numberOfReels, new int[] {1,1,1,1,1});//3
+    PayLine* payLine4 = new PayLine(numberOfReels, new int[] {-1,0,-1,0,-1});//4
+    PayLine* payLine5 = new PayLine(numberOfReels, new int[] {1,0,1,0,1});//4
+    PayLine* payLine6 = new PayLine(numberOfReels, new int[] {1,0,-1,0,1});//5
+    PayLine* payLine7 = new PayLine(numberOfReels, new int[] {-1,0,1,0,-1});//5
+    PayLine* payLine8 = new PayLine(numberOfReels, new int[] {-1,0,0,0,1});//6
+    PayLine* payLine9 = new PayLine(numberOfReels, new int[] {1,0,0,0,-1});//6
+    PayLine* payLine10 = new PayLine(numberOfReels, new int[] {-1,1,-1,1,-1});//7
+    PayLine* payLine11 = new PayLine(numberOfReels, new int[] {1,-1,1,-1,1});//7
+    PayLine* payLine12 = new PayLine(numberOfReels, new int[] {1,0,0,0,-1});//8
+    PayLine* payLine13 = new PayLine(numberOfReels, new int[] {-1,0,0,0,1});//8
+    PayLine* payLine14 = new PayLine(numberOfReels, new int[] {1,1,-1,1,1});//9
+    PayLine* payLine15 = new PayLine(numberOfReels, new int[] {-1,-1,1,-1,-1});//9
     
     PayLine** payLines = new PayLine*[]{payLine1,payLine2,payLine3,payLine4,payLine5,payLine6,payLine7,payLine8,payLine9,payLine10,payLine11,payLine12,payLine13,payLine14,payLine15};
     
     int numberOfCombinations = 6;
-    Combination* combination1 = new Combination("Fruit1", numberOfReels, new int[] {0,0,280,800,1700});
-    Combination* combination2 = new Combination("Fruit2", numberOfReels, new int[] {0,0,300,1000,1400});
-    Combination* combination3 = new Combination("Fruit3", numberOfReels, new int[] {0,0,600,1200,1800});
-    Combination* combination4 = new Combination("Fruit4", numberOfReels, new int[] {0,0,400,850,1200});
-    Combination* combination5 = new Combination("Fruit5", numberOfReels, new int[] {0,0,110,210,300});
+    Combination* combination1 = new Combination("Fruit1", numberOfReels, new int[] {0,0,480,800,2500});
+    Combination* combination2 = new Combination("Fruit2", numberOfReels, new int[] {0,0,600,1000,1900});
+    Combination* combination3 = new Combination("Fruit3", numberOfReels, new int[] {0,0,900,1200,2100});
+    Combination* combination4 = new Combination("Fruit4", numberOfReels, new int[] {0,0,590,850,2400});
+    Combination* combination5 = new Combination("Fruit5", numberOfReels, new int[] {0,0,290,410,1000});
     Combination* combinationS = new Combination("FruitS", numberOfReels, new int[] {0,0,5000,11000,17000});
     
     Combination** combinations = new Combination*[]{combination1,combination2,combination3,combination4,combination5,combinationS};
@@ -175,7 +175,7 @@ SlotMachine* Test::makeSlotMachine()
 void Test::testRTP()
 {
     SlotMachine* slotMachine = Test::makeSlotMachine();
-    int numberOfTests = 1e6;
+    int numberOfTests = 5e6;
     double s = 0;
     for(int i = 0; i < numberOfTests; i++)
     {
