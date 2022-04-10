@@ -100,11 +100,11 @@ SlotMachine* Test::makeSlotMachine()
     Fruit** fruitsForReel4 = Fruit::makeFruitArray(3, 4, 5, 5, 5, 1);
     Fruit** fruitsForReel5 = Fruit::makeFruitArray(6, 4, 5, 5, 5, 1);
     
-    int numberOfFruitsForReel1 = 6;
-    int numberOfFruitsForReel2 = 5;
-    int numberOfFruitsForReel3 = 5;
-    int numberOfFruitsForReel4 = 5;
-    int numberOfFruitsForReel5 = 7;
+    int numberOfFruitsForReel1 = 5 + 4 + 5 + 5 + 5 + 1;
+    int numberOfFruitsForReel2 = 4 + 4 + 3 + 5 + 5 + 1;
+    int numberOfFruitsForReel3 = 5 + 3 + 5 + 4 + 5 + 1;
+    int numberOfFruitsForReel4 = 3 + 4 + 5 + 5 + 5 + 1;
+    int numberOfFruitsForReel5 = 6 + 4 + 5 + 5 + 5 + 1;
     
     Reel* reel1 = new Reel(numberOfFruitsForReel1, fruitsForReel1);
     Reel* reel2 = new Reel(numberOfFruitsForReel2, fruitsForReel2);

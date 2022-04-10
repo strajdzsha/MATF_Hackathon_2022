@@ -101,9 +101,33 @@ void SlotMachine::outputReels()
     {
         for(int i = 0; i < this->numberOfReels_; i++)
         {
-            if(j==0)cout << this->reels_[i]->getUpperFruit()->getType() << " ";
-            else if(j==1)cout << this->reels_[i]->getCentralFruit()->getType() << " ";
-            else cout << this->reels_[i]->getDownFruit()->getType() << " ";
+            if(j==0)
+            {
+                if(this->reels_[i] == nullptr || this->reels_[i]->getUpperFruit() == nullptr)
+                {
+                    for(int z = 0; z < 20; z++)cout << "WTFFFFFF\n";
+                    exit(1);
+                }
+                cout << this->reels_[i]->getUpperFruit()->getType() << " ";
+            }
+            else if(j==1)
+            {
+                if(this->reels_[i] == nullptr || this->reels_[i]->getCentralFruit() == nullptr)
+                {
+                    for(int z = 0; z < 20; z++)cout << "WTFFFFFF\n";
+                    exit(1);
+                }
+                cout << this->reels_[i]->getCentralFruit()->getType() << " ";
+            }
+            else
+            {
+                if(this->reels_[i] == nullptr || this->reels_[i]->getDownFruit() == nullptr)
+                {
+                    for(int z = 0; z < 20; z++)cout << "WTFFFFFF\n";
+                    exit(1);
+                }
+                cout << this->reels_[i]->getDownFruit()->getType() << " ";
+            }
         }
         cout << endl;
     }

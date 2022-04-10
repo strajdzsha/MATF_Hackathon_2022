@@ -89,6 +89,8 @@
 		103F91E94427463C9BB0B657 /* CCActionGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 997B574D1760418AB4BFB609 /* CCActionGrid.cpp */; };
 		1091924F28026CE4003118CA /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1091924D28026CE4003118CA /* User.cpp */; };
 		1091925028026CE4003118CA /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1091924D28026CE4003118CA /* User.cpp */; };
+		1091925328028898003118CA /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 1091925128028898003118CA /* cherry.png */; };
+		1091925428028898003118CA /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1091925228028898003118CA /* lemon.png */; };
 		10D00B8728020BF100874973 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7C28020BEF00874973 /* main.cpp */; };
 		10D00B8828020BF100874973 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7C28020BEF00874973 /* main.cpp */; };
 		10D00B8928020BF100874973 /* Reel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7D28020BEF00874973 /* Reel.cpp */; };
@@ -1100,6 +1102,8 @@
 		108BF4161FA941FFA916C5C6 /* CCNavMeshObstacle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCNavMeshObstacle.h; path = cocos2d/cocos/navmesh/CCNavMeshObstacle.h; sourceTree = SOURCE_ROOT; };
 		1091924D28026CE4003118CA /* User.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = User.cpp; path = Classes/User.cpp; sourceTree = "<group>"; };
 		1091924E28026CE4003118CA /* User.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = User.hpp; path = Classes/User.hpp; sourceTree = "<group>"; };
+		1091925128028898003118CA /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cherry.png; path = Resources/cherry.png; sourceTree = "<group>"; };
+		1091925228028898003118CA /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lemon.png; path = Resources/lemon.png; sourceTree = "<group>"; };
 		109CE15634E34E44B7821CEB /* CCPUOnExpireObserverTranslator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUOnExpireObserverTranslator.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp; sourceTree = SOURCE_ROOT; };
 		10AEEB3148C640749C036203 /* TextAtlasReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextAtlasReader.cpp; path = "cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp"; sourceTree = SOURCE_ROOT; };
 		10CB421B564441C5BC758E8F /* CCPUBeamRender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCPUBeamRender.h; path = cocos2d/extensions/Particle3D/PU/CCPUBeamRender.h; sourceTree = SOURCE_ROOT; };
@@ -4021,6 +4025,8 @@
 		DA155787F97B43BC91A8F592 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1091925128028898003118CA /* cherry.png */,
+				1091925228028898003118CA /* lemon.png */,
 				7A729F5A1E8D4BC5AA0F6177 /* fonts */,
 				22A20E813E0F4910B6B5CB9C /* res */,
 				A4E4024611874AC29FA9E2BB /* CloseNormal.png */,
@@ -4601,8 +4607,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1091925328028898003118CA /* cherry.png in Resources */,
 				926070DD10AE4F02A5210007 /* Icon.icns in Resources */,
 				560B4108C97F49B0B79322EE /* Info.plist in Resources */,
+				1091925428028898003118CA /* lemon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

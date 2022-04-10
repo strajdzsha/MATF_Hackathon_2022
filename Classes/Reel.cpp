@@ -13,11 +13,13 @@ using namespace std;
 Reel::Reel(int numberOfFruits, Fruit** fruits)
 {
     this->numberOfFruits_ = numberOfFruits;
-    this->fruits_ = new Fruit*[numberOfFruits];
+    this->fruits_ = fruits;//new Fruit*[numberOfFruits];
+    /*
     for(int i = 0; i < numberOfFruits_; i++)
     {
         this->fruits_[i] = fruits[i];
     }
+     */
 }
 
 Reel::Reel(int numberOfFruits)
@@ -49,7 +51,7 @@ void Reel::randomShuffle()
 
 void Reel::spin(int by)
 {
-    int newCentral = (this->centralPosition_ + by + numberOfFruits_) % numberOfFruits_;
+    int newCentral = (this->centralPosition_ + by + numberOfFruits_ * 5) % numberOfFruits_;
     //if(newCentral < 1)newCentral=1;
     //if(newCentral >= numberOfFruits_-1)newCentral = numberOfFruits_-2;
     centralPosition_ = newCentral;
@@ -72,19 +74,21 @@ void Reel::outputReel()
 Fruit* Reel::getUpperFruit() const
 {
     //if(centralPosition_ < 1 || centralPosition_ >= numberOfFruits_ - 1)return nullptr;
-    return this->fruits_[(centralPosition_-1+numberOfFruits_)%numberOfFruits_];
+    return this->fruits_[(centralPosition_-1+numberOfFruits_*5)%numberOfFruits_];
 }
 
 Fruit* Reel::getCentralFruit() const
 {
     //if(centralPosition_ < 1 || centralPosition_ >= numberOfFruits_ - 1)return nullptr;
+    if(centralPosition_ < 0)exit(5);
+    if(centralPosition_ >= numberOfFruits_)exit(6);
     return this->fruits_[centralPosition_];
 }
 
 Fruit* Reel::getDownFruit() const
 {
     //if(centralPosition_ < 1 || centralPosition_ >= numberOfFruits_ - 1)return nullptr;
-    return this->fruits_[(centralPosition_+1+numberOfFruits_)%numberOfFruits_];
+    return this->fruits_[(centralPosition_+1+numberOfFruits_*5)%numberOfFruits_];
 }
 
 int Reel::getNumberOfFruitsOnReel() const {return this->numberOfFruits_;}

@@ -27,6 +27,113 @@
 
 USING_NS_CC;
 
+Sprite* getSpriteByType(Fruit* fruit)
+{
+    if (fruit->getType() == "Fruit1") return Sprite::create("lemon.png");
+    else if (fruit->getType() == "Fruit2") return Sprite::create("cherry.png");
+    else if (fruit->getType() == "Fruit3") return Sprite::create("cherry.png");
+    else if (fruit->getType() == "Fruit4") return Sprite::create("cherry.png");
+    else if (fruit->getType() == "Fruit5") return Sprite::create("cherry.png");
+    else if (fruit->getType() == "FruitS") return Sprite::create("cherry.png");
+    return nullptr;
+}
+
+string getFileNameByType(Fruit* fruit)
+{
+    if (fruit->getType() == "Fruit1") return "lemon.png";
+    else if (fruit->getType() == "Fruit2") return "cherry.png";
+    else if (fruit->getType() == "Fruit3") return "cherry.png";
+    else if (fruit->getType() == "Fruit4") return "cherry.png";
+    else if (fruit->getType() == "Fruit5") return "cherry.png";
+    else if (fruit->getType() == "FruitS") return "cherry.png";
+    return "greska";
+}
+
+void HelloWorld::updateGridWrapper(HelloWorld* helloWorld)
+{
+    if (helloWorld)helloWorld->updateGridThread();
+}
+
+void HelloWorld::makeUpdateGridThread()
+{
+    new thread(updateGridWrapper, this);
+}
+
+void HelloWorld::updateGridThread()
+{
+    while (true)
+    {
+        SlotMachine::busyWait(0.1);
+        updateGrid();
+    }
+}
+
+void HelloWorld::drawGrid()
+{
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    int marginX = visibleSize.width / 8;
+    int marginY = visibleSize.height / 8;
+    Reel** reels = this->slotMachine->getReels();
+    int spriteWidth = (visibleSize.width - 2 * marginX) / 5;
+    int spriteHeight = (visibleSize.height - 2 * marginY) / 3;
+    for (int i = 0; i < this->slotMachine->getNumberOfReels(); i++)
+    {
+
+        Reel* reel = reels[i];
+        Fruit* fu = reel->getUpperFruit();
+        Sprite* su = getSpriteByType(fu);
+        su->setContentSize(Size(spriteWidth, spriteHeight));
+        su->setAnchorPoint(Vec2(0, 0));
+        su->setPosition(Vec2(marginX + i * spriteWidth, marginY + spriteHeight * 2));
+        this->addChild(su);
+
+        Fruit* fc = reel->getCentralFruit();
+        Sprite* sc = getSpriteByType(fc);
+        sc->setContentSize(Size(spriteWidth, spriteHeight));
+        sc->setAnchorPoint(Vec2(0, 0));
+        sc->setPosition(Vec2(marginX + i * spriteWidth, marginY + spriteHeight));
+        this->addChild(sc);
+
+        Fruit* fd = reel->getDownFruit();
+        Sprite* sd = getSpriteByType(fd);
+        sd->setContentSize(Size(spriteWidth, spriteHeight));
+        sd->setAnchorPoint(Vec2(0, 0));
+        sd->setPosition(Vec2(marginX + i * spriteWidth, marginY));
+        this->addChild(sd);
+
+        sprites[i][0] = su;
+        sprites[i][1] = sc;
+        sprites[i][2] = sd;
+    }
+}
+
+void HelloWorld::updateGrid()
+{
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    int marginX = visibleSize.width / 8;
+    int marginY = visibleSize.height / 8;
+    int spriteWidth = (visibleSize.width - 2 * marginX) / 5;
+    int spriteHeight = (visibleSize.height - 2 * marginY) / 3;
+    Reel** reels = this->slotMachine->getReels();
+    for (int i = 0; i < this->slotMachine->getNumberOfReels(); i++)
+    {
+        Reel* reel = reels[i];
+        sprites[i][0]->setTexture(getFileNameByType(reel->getUpperFruit()));
+        sprites[i][0]->setContentSize(Size(spriteWidth, spriteHeight));
+        sprites[i][0]->setAnchorPoint(Vec2(0, 0));
+
+        sprites[i][1]->setTexture(getFileNameByType(reel->getCentralFruit()));
+        sprites[i][1]->setContentSize(Size(spriteWidth, spriteHeight));
+        sprites[i][1]->setAnchorPoint(Vec2(0, 0));
+
+        sprites[i][2]->setTexture(getFileNameByType(reel->getDownFruit()));
+        sprites[i][2]->setContentSize(Size(spriteWidth, spriteHeight));
+        sprites[i][2]->setAnchorPoint(Vec2(0, 0));
+    }
+}
+
 Scene* HelloWorld::createScene()
 {
     return HelloWorld::create();
@@ -68,6 +175,8 @@ bool HelloWorld::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    int marginX = visibleSize.width / 8;
+    int marginY = visibleSize.height / 8;
 
     // 3. add your codes below...
     
@@ -76,7 +185,7 @@ bool HelloWorld::init()
     button->setTitleFontSize(16);
     button->setTitleColor(Color3B(255, 255, 255));
     //button->setpos
-    button->Node::setPosition(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y);
+    button->Node::setPosition(visibleSize.width / 2 + origin.x, marginY / 2);
     //bool spin = true;
     this->spin=true;
     button->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type){
@@ -108,6 +217,10 @@ bool HelloWorld::init()
     });
     this->addChild(button);
     
+    drawGrid();
+
+    makeUpdateGridThread();
+
     return true;
 }
 

@@ -24,6 +24,10 @@
 		<data>
 		NHQmHfK1kPbO8yTfsfho3xYA1yE=
 		</data>
+		<key>Resources/cherry.png</key>
+		<data>
+		kDyuQ7X2naFTlhyCyt8H2Cl9qz0=
+		</data>
 		<key>Resources/fonts/Marker Felt.ttf</key>
 		<data>
 		Ul8qSkVFD87LPYpf1H07D0hPYps=
@@ -32,9 +36,17 @@
 		<data>
 		foaJFK5WjLI88v0kWt2jmW0DL70=
 		</data>
+		<key>Resources/lemon.png</key>
+		<data>
+		6RTlTmwPqq5jUk6g+EsTjdSrUSg=
+		</data>
 		<key>Resources/res/.gitkeep</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>Resources/user.data</key>
+		<data>
+		YRdnmThV9OlcQY1qnQpGAzc0E6k=
 		</data>
 		<key>Resources/user.txt</key>
 		<data>
@@ -78,6 +90,13 @@
 			lBuoB955BcRKz710XAacPbp9O8NaEcts9aYjtAXk/eU=
 			</data>
 		</dict>
+		<key>Resources/cherry.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mbICcu8Yb0ZBKBa6aaKTUkf65lR59uXoL0NhkjcpqPw=
+			</data>
+		</dict>
 		<key>Resources/fonts/Marker Felt.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -92,11 +111,25 @@
 			yow/O3YIpuhxKwJ8y/WEgY9451DaEkD8tdj6iaC5J0c=
 			</data>
 		</dict>
+		<key>Resources/lemon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o3h2ZLglqPZJi9t78iNbyRkHWoeMfzBsX0GK1bMTLbs=
+			</data>
+		</dict>
 		<key>Resources/res/.gitkeep</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Resources/user.data</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bc/s4lPJ/lFE8HXUGrND2G2I+3RJFrsNOYKxk/arc3w=
 			</data>
 		</dict>
 		<key>Resources/user.txt</key>

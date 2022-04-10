@@ -37,7 +37,19 @@ using namespace ui;
 
 class HelloWorld : public cocos2d::Scene
 {
+    Sprite* sprites[5][3];
 public:
+
+    static void updateGridWrapper(HelloWorld* helloWorld);
+
+    void makeUpdateGridThread();
+
+    void updateGridThread();
+
+    void drawGrid();
+
+    void updateGrid();
+
     static cocos2d::Scene* createScene();
 
     virtual bool init();
