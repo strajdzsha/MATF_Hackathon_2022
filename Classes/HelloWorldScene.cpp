@@ -171,6 +171,10 @@ bool HelloWorld::init()
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
      */
     
+    Test::testRTP();
+    
+    SlotMachine::busyWait(15.0);
+    
     //<<<><><><><><><><><>MY TEST CODE<><><><><><><><><><><><><>
 
     auto visibleSize = Director::getInstance()->getVisibleSize();

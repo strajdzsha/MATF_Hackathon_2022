@@ -16,14 +16,17 @@
 #include "Fruit.hpp"
 #include "PayLine.hpp"
 #include "Combination.hpp"
+#include "Test.hpp"
 
 using namespace std;
 using namespace std::chrono;
 
 class PayLine;
+class Test;
 
 class SlotMachine
 {
+    friend class Test;
 private:
     bool threadWorking=false;
     thread* spinThread=nullptr;

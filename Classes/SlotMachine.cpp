@@ -29,7 +29,7 @@ void SlotMachine::spin()
     {
         static std::uniform_int_distribution<int> uid(0,this->reels_[i]->getNumberOfFruitsOnReel()-1);
         finalState[i] = uid(rng);
-        cout << "Generating final state for: " << i << " outputs " << finalState[i] << endl;
+        //cout << "Generating final state for: " << i << " outputs " << finalState[i] << endl;
     }
     while(threadWorking)
     {

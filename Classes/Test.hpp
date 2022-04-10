@@ -19,11 +19,14 @@
 using namespace std;
 using namespace std::chrono;
 
+class SlotMachine;
+
 class Test
 {
 public:
     static void main();
     static SlotMachine* makeSlotMachine();
+    static void testRTP();
 };
 
 #endif /* Test_hpp */
