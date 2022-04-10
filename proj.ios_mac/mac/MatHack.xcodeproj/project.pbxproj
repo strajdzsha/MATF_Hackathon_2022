@@ -91,6 +91,11 @@
 		1091925028026CE4003118CA /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1091924D28026CE4003118CA /* User.cpp */; };
 		1091925328028898003118CA /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 1091925128028898003118CA /* cherry.png */; };
 		1091925428028898003118CA /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1091925228028898003118CA /* lemon.png */; };
+		1091925A2802B310003118CA /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 109192552802B30F003118CA /* orange.png */; };
+		1091925B2802B310003118CA /* grapes.png in Resources */ = {isa = PBXBuildFile; fileRef = 109192562802B310003118CA /* grapes.png */; };
+		1091925C2802B310003118CA /* plum.png in Resources */ = {isa = PBXBuildFile; fileRef = 109192572802B310003118CA /* plum.png */; };
+		1091925D2802B310003118CA /* watermelon.png in Resources */ = {isa = PBXBuildFile; fileRef = 109192582802B310003118CA /* watermelon.png */; };
+		1091925E2802B310003118CA /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 109192592802B310003118CA /* seven.png */; };
 		10D00B8728020BF100874973 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7C28020BEF00874973 /* main.cpp */; };
 		10D00B8828020BF100874973 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7C28020BEF00874973 /* main.cpp */; };
 		10D00B8928020BF100874973 /* Reel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7D28020BEF00874973 /* Reel.cpp */; };
@@ -1104,6 +1109,11 @@
 		1091924E28026CE4003118CA /* User.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = User.hpp; path = Classes/User.hpp; sourceTree = "<group>"; };
 		1091925128028898003118CA /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cherry.png; path = Resources/cherry.png; sourceTree = "<group>"; };
 		1091925228028898003118CA /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lemon.png; path = Resources/lemon.png; sourceTree = "<group>"; };
+		109192552802B30F003118CA /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orange.png; path = Resources/orange.png; sourceTree = "<group>"; };
+		109192562802B310003118CA /* grapes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grapes.png; path = Resources/grapes.png; sourceTree = "<group>"; };
+		109192572802B310003118CA /* plum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plum.png; path = Resources/plum.png; sourceTree = "<group>"; };
+		109192582802B310003118CA /* watermelon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watermelon.png; path = Resources/watermelon.png; sourceTree = "<group>"; };
+		109192592802B310003118CA /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seven.png; path = Resources/seven.png; sourceTree = "<group>"; };
 		109CE15634E34E44B7821CEB /* CCPUOnExpireObserverTranslator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUOnExpireObserverTranslator.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp; sourceTree = SOURCE_ROOT; };
 		10AEEB3148C640749C036203 /* TextAtlasReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextAtlasReader.cpp; path = "cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp"; sourceTree = SOURCE_ROOT; };
 		10CB421B564441C5BC758E8F /* CCPUBeamRender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCPUBeamRender.h; path = cocos2d/extensions/Particle3D/PU/CCPUBeamRender.h; sourceTree = SOURCE_ROOT; };
@@ -4025,6 +4035,11 @@
 		DA155787F97B43BC91A8F592 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				109192562802B310003118CA /* grapes.png */,
+				109192552802B30F003118CA /* orange.png */,
+				109192572802B310003118CA /* plum.png */,
+				109192592802B310003118CA /* seven.png */,
+				109192582802B310003118CA /* watermelon.png */,
 				1091925128028898003118CA /* cherry.png */,
 				1091925228028898003118CA /* lemon.png */,
 				7A729F5A1E8D4BC5AA0F6177 /* fonts */,
@@ -4608,9 +4623,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1091925328028898003118CA /* cherry.png in Resources */,
+				1091925E2802B310003118CA /* seven.png in Resources */,
+				1091925B2802B310003118CA /* grapes.png in Resources */,
+				1091925C2802B310003118CA /* plum.png in Resources */,
 				926070DD10AE4F02A5210007 /* Icon.icns in Resources */,
 				560B4108C97F49B0B79322EE /* Info.plist in Resources */,
+				1091925A2802B310003118CA /* orange.png in Resources */,
 				1091925428028898003118CA /* lemon.png in Resources */,
+				1091925D2802B310003118CA /* watermelon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

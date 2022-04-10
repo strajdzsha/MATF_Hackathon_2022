@@ -30,6 +30,7 @@
 #include "User.hpp"
 #include "SlotMachine.hpp"
 #include "ui/CocosGUI.h"
+#include <thread>
 
 using namespace std;
 using namespace cocos2d;
@@ -38,6 +39,17 @@ using namespace ui;
 class HelloWorld : public cocos2d::Scene
 {
     Sprite* sprites[5][3];
+
+    int betAmount = 100;
+    Label* coinsLabel;
+    Label* betLabel;
+    Button* plusBet;
+    Button* minusBet;
+    
+    int bettedAmount;
+
+    User usr;
+
 public:
 
     static void updateGridWrapper(HelloWorld* helloWorld);

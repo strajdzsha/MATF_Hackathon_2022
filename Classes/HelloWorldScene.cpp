@@ -27,26 +27,29 @@
 
 USING_NS_CC;
 
-Sprite* getSpriteByType(Fruit* fruit)
-{
-    if (fruit->getType() == "Fruit1") return Sprite::create("lemon.png");
-    else if (fruit->getType() == "Fruit2") return Sprite::create("cherry.png");
-    else if (fruit->getType() == "Fruit3") return Sprite::create("cherry.png");
-    else if (fruit->getType() == "Fruit4") return Sprite::create("cherry.png");
-    else if (fruit->getType() == "Fruit5") return Sprite::create("cherry.png");
-    else if (fruit->getType() == "FruitS") return Sprite::create("cherry.png");
-    return nullptr;
-}
-
 string getFileNameByType(Fruit* fruit)
 {
+    //if (fruit == nullptr)exit(1234);
     if (fruit->getType() == "Fruit1") return "lemon.png";
     else if (fruit->getType() == "Fruit2") return "cherry.png";
-    else if (fruit->getType() == "Fruit3") return "cherry.png";
-    else if (fruit->getType() == "Fruit4") return "cherry.png";
-    else if (fruit->getType() == "Fruit5") return "cherry.png";
-    else if (fruit->getType() == "FruitS") return "cherry.png";
-    return "greska";
+    else if (fruit->getType() == "Fruit3") return "grapes.png";
+    else if (fruit->getType() == "Fruit4") return "orange.png";
+    else if (fruit->getType() == "Fruit5") return "lemon.png";
+    else if (fruit->getType() == "FruitS") return "lemon.png";//zameniti
+    return "seven.png";
+}
+
+Sprite* getSpriteByType(Fruit* fruit)
+{
+    /*if (fruit->getType() == "Fruit1") return Sprite::create("lemon.png");
+    else if (fruit->getType() == "Fruit2") return Sprite::create("cherry.png");
+    else if (fruit->getType() == "Fruit3") return Sprite::create("orange.png");
+    else if (fruit->getType() == "Fruit4") return Sprite::create("grapes.png");
+    else if (fruit->getType() == "Fruit5") return Sprite::create("watermelon.png");
+    else if (fruit->getType() == "FruitS") return Sprite::create("seven.png");
+    return nullptr;*/
+    return Sprite::create(getFileNameByType(fruit));
+
 }
 
 void HelloWorld::updateGridWrapper(HelloWorld* helloWorld)
@@ -63,7 +66,9 @@ void HelloWorld::updateGridThread()
 {
     while (true)
     {
-        SlotMachine::busyWait(0.1);
+        SlotMachine::busyWait(0.2);
+        //this_thread::sleep_for(200);
+        //this_thread::sleep_for(200*1000);
         updateGrid();
     }
 }
@@ -162,6 +167,7 @@ bool HelloWorld::init()
     //Test::main();
     this->slotMachine = Test::makeSlotMachine();
     
+
     /*
     cout << "~~~~~~~~~~~~~~~~~~~HELLO FROM HELLOWORLDSCENE~~~~~~~~~~~~~~~~~~\n";
     slotMachine->spinIt();
@@ -171,10 +177,6 @@ bool HelloWorld::init()
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
      */
     
-    Test::testRTP();
-    
-    SlotMachine::busyWait(15.0);
-    
     //<<<><><><><><><><><>MY TEST CODE<><><><><><><><><><><><><>
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -182,11 +184,17 @@ bool HelloWorld::init()
     int marginX = visibleSize.width / 8;
     int marginY = visibleSize.height / 8;
 
+   /*auto bg = Sprite::create("bgnd.png");
+    this->addChild(bg);*/
+
     // 3. add your codes below...
+
+    //user
+    usr.loadUser();
     
     auto button = ui::Button::create();
     button->setTitleText("SPIN");
-    button->setTitleFontSize(16);
+    button->setTitleFontSize(48);
     button->setTitleColor(Color3B(255, 255, 255));
     //button->setpos
     button->Node::setPosition(visibleSize.width / 2 + origin.x, marginY / 2);
@@ -205,6 +213,9 @@ bool HelloWorld::init()
                                 slotMachine->spinIt();
                                 ((Button*)sender)->setTitleText("STOP");
                                 cout << "~~~~~~~~~~BEGINING";
+                                usr.changeCoins(-betAmount);
+                                this->bettedAmount = this->betAmount;
+                                coinsLabel->setString("Coins: " + std::to_string(usr.getCoins()));
                             }
                             else
                             {
@@ -212,6 +223,8 @@ bool HelloWorld::init()
                                 ((Button*)sender)->setTitleText("SPIN");
                                 cout << "FROM GAME::: WON:" << slotMachine->calculateWin() << endl;
                                 slotMachine->outputReels();
+                                usr.changeCoins(slotMachine->calculateWin()/1000.0 * this->bettedAmount);
+                                coinsLabel->setString("Coins: " + std::to_string(usr.getCoins()));
                             }
                             this->spin=!this->spin;
                             break;
@@ -220,6 +233,66 @@ bool HelloWorld::init()
             }
     });
     this->addChild(button);
+
+    //coins
+    coinsLabel = Label::createWithSystemFont("Coins: " + std::to_string(usr.getCoins()), "Helvetica", 30.0f);
+    coinsLabel->setColor(Color3B::WHITE);
+    coinsLabel->setPosition(Vec2(marginX, marginY/2));
+    coinsLabel->setAlignment(TextHAlignment::LEFT);
+    this->addChild(coinsLabel);
+
+    //bet
+    betLabel = Label::createWithSystemFont("Bet: " + std::to_string(betAmount), "Helvetica", 30.0f);
+    betLabel->setColor(Color3B::WHITE);
+    betLabel->setPosition(Vec2(visibleSize.width-3*marginX/2, marginY / 2));
+    betLabel->setAlignment(TextHAlignment::LEFT);
+    this->addChild(betLabel);
+
+    //plus bet
+    plusBet = ui::Button::create();
+    plusBet->setTitleText("+");
+    plusBet->setTitleFontSize(64);
+    plusBet->setTitleColor(Color3B(255, 255, 255));
+    plusBet->Node::setPosition(visibleSize.width - marginX / 2, marginY / 2);
+    plusBet->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type) {
+        switch (type)
+        {
+        case ui::Widget::TouchEventType::BEGAN:
+            break;
+        case ui::Widget::TouchEventType::ENDED:
+            // increace betAmount
+            betAmount += 10;
+            if (betAmount > 200) betAmount = 200;
+            betLabel->setString("Bet: " + std::to_string(betAmount));
+            break;
+        default:
+            break;
+        }
+        });
+    this->addChild(plusBet);
+
+    //minus bet
+    minusBet = ui::Button::create();
+    minusBet->setTitleText("-");
+    minusBet->setTitleFontSize(64);
+    minusBet->setTitleColor(Color3B(255, 255, 255));
+    minusBet->Node::setPosition(visibleSize.width - 5 * marginX / 2, marginY / 2);
+    minusBet->addTouchEventListener([&](Ref* sender, Widget::TouchEventType type) {
+        switch (type)
+        {
+        case ui::Widget::TouchEventType::BEGAN:
+            break;
+        case ui::Widget::TouchEventType::ENDED:
+            // decrease betAmount
+            betAmount -= 10;
+            if (betAmount < 20) betAmount = 20;
+            betLabel->setString("Bet: " + std::to_string(betAmount));
+            break;
+        default:
+            break;
+        }
+        });
+    this->addChild(minusBet);
     
     drawGrid();
 

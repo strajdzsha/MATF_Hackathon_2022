@@ -26,7 +26,7 @@
 		</data>
 		<key>Resources/cherry.png</key>
 		<data>
-		kDyuQ7X2naFTlhyCyt8H2Cl9qz0=
+		9+ADzUHgiwG7k7Cq0p5sFzSIG+4=
 		</data>
 		<key>Resources/fonts/Marker Felt.ttf</key>
 		<data>
@@ -36,13 +36,29 @@
 		<data>
 		foaJFK5WjLI88v0kWt2jmW0DL70=
 		</data>
+		<key>Resources/grapes.png</key>
+		<data>
+		qHiHYfQeoU3o15gaNbGMk6gj7bg=
+		</data>
 		<key>Resources/lemon.png</key>
 		<data>
-		6RTlTmwPqq5jUk6g+EsTjdSrUSg=
+		Bu8CfoKiJnDaRAtP5meseIp25Yk=
+		</data>
+		<key>Resources/orange.png</key>
+		<data>
+		bKP7ZYgllupNqAOmZfmNMdff2fM=
+		</data>
+		<key>Resources/plum.png</key>
+		<data>
+		PD7i+qhtQkbc2qPcGb4nXslrGlo=
 		</data>
 		<key>Resources/res/.gitkeep</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>Resources/seven.png</key>
+		<data>
+		hZJub3kwPQcKX70TKug/VoLDtQs=
 		</data>
 		<key>Resources/user.data</key>
 		<data>
@@ -51,6 +67,10 @@
 		<key>Resources/user.txt</key>
 		<data>
 		C4b9lPHwOSLoZtAB+3qujyBHpKw=
+		</data>
+		<key>Resources/watermelon.png</key>
+		<data>
+		LnVlPuGkSlu77VYy1nrpf6LT5rM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,7 +114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mbICcu8Yb0ZBKBa6aaKTUkf65lR59uXoL0NhkjcpqPw=
+			MXOklOeIh2jaDGk5ADy30WgsIlAy1560MVLXEEzuZCY=
 			</data>
 		</dict>
 		<key>Resources/fonts/Marker Felt.ttf</key>
@@ -111,11 +131,32 @@
 			yow/O3YIpuhxKwJ8y/WEgY9451DaEkD8tdj6iaC5J0c=
 			</data>
 		</dict>
+		<key>Resources/grapes.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oufCD3/xtGXi2IifWYOnhEL+VUhi0u+e2cfwnuQWHmc=
+			</data>
+		</dict>
 		<key>Resources/lemon.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3h2ZLglqPZJi9t78iNbyRkHWoeMfzBsX0GK1bMTLbs=
+			mAyNRH8UC7qcsqLO6gXrOl2X1qoN6FcAfO6QLgTJb2o=
+			</data>
+		</dict>
+		<key>Resources/orange.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mb6ZPYzmWwZqCo6hWwih8UsR4lNb9c7m50E+RgsZa5A=
+			</data>
+		</dict>
+		<key>Resources/plum.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h8AQmmCmdpxDpNtGfqWu0pA/Q3aE3xlEc4RRX7CQbug=
 			</data>
 		</dict>
 		<key>Resources/res/.gitkeep</key>
@@ -123,6 +164,13 @@
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Resources/seven.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kbbdQQ5nZn9+ZLDwGZkPOCPWIAdBURLfUGxZbRnQJMQ=
 			</data>
 		</dict>
 		<key>Resources/user.data</key>
@@ -137,6 +185,13 @@
 			<key>hash2</key>
 			<data>
 			U7LLUJcqfkQAoEL/IFXblFvS4vdic6dODjeRTxw9vrI=
+			</data>
+		</dict>
+		<key>Resources/watermelon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			stZfhvaxvYOD6n/GLo2qa296l1iCkJ3MCMijZuajjWM=
 			</data>
 		</dict>
 	</dict>
