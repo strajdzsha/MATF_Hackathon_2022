@@ -94,17 +94,17 @@ SlotMachine* Test::makeSlotMachine()
     Fruit** fruitsForReel5 = new Fruit*[]{new Fruit1(), new Fruit1(), new Fruit2(), new Fruit1(), new Fruit2(), new Fruit2(), new Fruit2()};
      */
     
-    Fruit** fruitsForReel1 = Fruit::makeFruitArray(5, 4, 3, 5, 6, 1);
-    Fruit** fruitsForReel2 = Fruit::makeFruitArray(4, 4, 3, 5, 9, 1);
-    Fruit** fruitsForReel3 = Fruit::makeFruitArray(5, 3, 4, 4, 9, 1);
-    Fruit** fruitsForReel4 = Fruit::makeFruitArray(3, 4, 4, 5, 12, 1);
-    Fruit** fruitsForReel5 = Fruit::makeFruitArray(6, 4, 5, 3, 14, 1);
+    Fruit** fruitsForReel1 = Fruit::makeFruitArray(20, 10, 20, 20, 25, 5);
+    Fruit** fruitsForReel2 = Fruit::makeFruitArray(15, 15, 20, 20, 25, 5);
+    Fruit** fruitsForReel3 = Fruit::makeFruitArray(20, 10, 20, 20, 25, 5);
+    Fruit** fruitsForReel4 = Fruit::makeFruitArray(17, 13, 20, 20, 25, 5);
+    Fruit** fruitsForReel5 = Fruit::makeFruitArray(24, 6, 20, 20, 25, 5);
     
-    int numberOfFruitsForReel1 = 5 + 4 + 3 + 5 + 6 + 1;
-    int numberOfFruitsForReel2 = 4 + 4 + 3 + 5 + 9 + 1;
-    int numberOfFruitsForReel3 = 5 + 3 + 4 + 4 + 9 + 1;
-    int numberOfFruitsForReel4 = 3 + 4 + 4 + 5 + 12 + 1;
-    int numberOfFruitsForReel5 = 6 + 4 + 5 + 3 + 14 + 1;
+    int numberOfFruitsForReel1 = 100;//5 + 4 + 3 + 5 + 6 + 1;
+    int numberOfFruitsForReel2 = 100;//4 + 4 + 3 + 5 + 9 + 1;
+    int numberOfFruitsForReel3 = 100;//5 + 3 + 4 + 4 + 9 + 1;
+    int numberOfFruitsForReel4 = 100;//3 + 4 + 4 + 5 + 12 + 1;
+    int numberOfFruitsForReel5 = 100;//6 + 4 + 5 + 3 + 14 + 1;
     
     Reel* reel1 = new Reel(numberOfFruitsForReel1, fruitsForReel1);
     Reel* reel2 = new Reel(numberOfFruitsForReel2, fruitsForReel2);
@@ -157,12 +157,20 @@ SlotMachine* Test::makeSlotMachine()
     PayLine** payLines = new PayLine*[]{payLine1,payLine2,payLine3,payLine4,payLine5,payLine6,payLine7,payLine8,payLine9,payLine10,payLine11,payLine12,payLine13,payLine14,payLine15};
     
     int numberOfCombinations = 6;
+    /*
     Combination* combination1 = new Combination("Fruit1", numberOfReels, new int[] {0,0,400,600,1900});
     Combination* combination2 = new Combination("Fruit2", numberOfReels, new int[] {0,0,480,780,1490});
     Combination* combination3 = new Combination("Fruit3", numberOfReels, new int[] {0,0,750,990,1850});
     Combination* combination4 = new Combination("Fruit4", numberOfReels, new int[] {0,0,570,800,2300});
     Combination* combination5 = new Combination("Fruit5", numberOfReels, new int[] {0,0,290,410,1000});
     Combination* combinationS = new Combination("FruitS", numberOfReels, new int[] {0,0,4800,10400,15000});
+     */
+    Combination* combination1 = new Combination("Fruit1", numberOfReels, new int[] {0,0,155,776,1897});
+    Combination* combination2 = new Combination("Fruit2", numberOfReels, new int[] {0,0,418,2140,17155});
+    Combination* combination3 = new Combination("Fruit3", numberOfReels, new int[] {0,0,129,516,1546});
+    Combination* combination4 = new Combination("Fruit4", numberOfReels, new int[] {0,0,129,516,1546});
+    Combination* combination5 = new Combination("Fruit5", numberOfReels, new int[] {0,0,79,265,619});
+    Combination* combinationS = new Combination("FruitS", numberOfReels, new int[] {0,0,12000,240000,4800000});
     
     Combination** combinations = new Combination*[]{combination1,combination2,combination3,combination4,combination5,combinationS};
     
