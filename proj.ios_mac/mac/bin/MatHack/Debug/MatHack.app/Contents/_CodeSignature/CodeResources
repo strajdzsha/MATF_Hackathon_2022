@@ -36,6 +36,10 @@
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
+		<key>Resources/user.txt</key>
+		<data>
+		C4b9lPHwOSLoZtAB+3qujyBHpKw=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -93,6 +97,13 @@
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Resources/user.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U7LLUJcqfkQAoEL/IFXblFvS4vdic6dODjeRTxw9vrI=
 			</data>
 		</dict>
 	</dict>

@@ -210,6 +210,7 @@ dependencies: /Users/mbp/Desktop/MatHack/Classes/AppDelegate.cpp \
   /Users/mbp/Desktop/MatHack/Classes/SlotMachine.hpp \
   /Users/mbp/Desktop/MatHack/Classes/PayLine.hpp \
   /Users/mbp/Desktop/MatHack/Classes/Combination.hpp \
+  /Users/mbp/Desktop/MatHack/Classes/User.hpp \
   /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/CocosGUI.h \
   /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UIWidget.h \
   /Users/mbp/Desktop/MatHack/cocos2d/cocos/ui/UILayoutParameter.h \

@@ -87,6 +87,8 @@
 		0FF71BF4740042C3982060FD /* CCBatchNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 772677D64ACA48238A5F180B /* CCBatchNode.cpp */; };
 		10389C34ACC940AF9CC5E461 /* CCParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3032AA7AD41431684410A7C /* CCParticleSystem.cpp */; };
 		103F91E94427463C9BB0B657 /* CCActionGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 997B574D1760418AB4BFB609 /* CCActionGrid.cpp */; };
+		1091924F28026CE4003118CA /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1091924D28026CE4003118CA /* User.cpp */; };
+		1091925028026CE4003118CA /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1091924D28026CE4003118CA /* User.cpp */; };
 		10D00B8728020BF100874973 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7C28020BEF00874973 /* main.cpp */; };
 		10D00B8828020BF100874973 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7C28020BEF00874973 /* main.cpp */; };
 		10D00B8928020BF100874973 /* Reel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10D00B7D28020BEF00874973 /* Reel.cpp */; };
@@ -1096,6 +1098,8 @@
 		106508D32E134F7EB1ABB6B5 /* BufferManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BufferManager.h; path = cocos2d/cocos/renderer/backend/metal/BufferManager.h; sourceTree = SOURCE_ROOT; };
 		107D98CE03EF4A27A7FF1A6F /* HttpAsynConnection-apple.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "HttpAsynConnection-apple.h"; path = "cocos2d/cocos/network/HttpAsynConnection-apple.h"; sourceTree = SOURCE_ROOT; };
 		108BF4161FA941FFA916C5C6 /* CCNavMeshObstacle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCNavMeshObstacle.h; path = cocos2d/cocos/navmesh/CCNavMeshObstacle.h; sourceTree = SOURCE_ROOT; };
+		1091924D28026CE4003118CA /* User.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = User.cpp; path = Classes/User.cpp; sourceTree = "<group>"; };
+		1091924E28026CE4003118CA /* User.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = User.hpp; path = Classes/User.hpp; sourceTree = "<group>"; };
 		109CE15634E34E44B7821CEB /* CCPUOnExpireObserverTranslator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CCPUOnExpireObserverTranslator.cpp; path = cocos2d/extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.cpp; sourceTree = SOURCE_ROOT; };
 		10AEEB3148C640749C036203 /* TextAtlasReader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextAtlasReader.cpp; path = "cocos2d/cocos/editor-support/cocostudio/WidgetReader/TextAtlasReader/TextAtlasReader.cpp"; sourceTree = SOURCE_ROOT; };
 		10CB421B564441C5BC758E8F /* CCPUBeamRender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CCPUBeamRender.h; path = cocos2d/extensions/Particle3D/PU/CCPUBeamRender.h; sourceTree = SOURCE_ROOT; };
@@ -3192,6 +3196,8 @@
 				32AE4BBF97644BCEB30A76E9 /* HelloWorldScene.h */,
 				10D00B9328021C2C00874973 /* Combination.cpp */,
 				10D00B9428021C2C00874973 /* Combination.hpp */,
+				1091924D28026CE4003118CA /* User.cpp */,
+				1091924E28026CE4003118CA /* User.hpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -4648,6 +4654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1091924F28026CE4003118CA /* User.cpp in Sources */,
 				10D00B9128020BF100874973 /* Test.cpp in Sources */,
 				10D00B9528021C2C00874973 /* Combination.cpp in Sources */,
 				1B9607C7E08C4916AC453188 /* AppDelegate.cpp in Sources */,
@@ -4866,6 +4873,7 @@
 				7C10D12CB85849A9AD572A03 /* ccCArray.cpp in Sources */,
 				198C7F43A0604A2BB7D036B8 /* ccFPSImages.c in Sources */,
 				C987F8BB047347E0A87A86EE /* ccRandom.cpp in Sources */,
+				1091925028026CE4003118CA /* User.cpp in Sources */,
 				CD9779E954394DEC8482C904 /* ccTypes.cpp in Sources */,
 				CB85B436333F408BA6F0A025 /* ccUTF8.cpp in Sources */,
 				01457F7A78A443C28A6DEBE3 /* ccUtils.cpp in Sources */,

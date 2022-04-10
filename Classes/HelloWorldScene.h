@@ -27,6 +27,7 @@
 
 #include "cocos2d.h"
 #include "Test.hpp"
+#include "User.hpp"
 #include "SlotMachine.hpp"
 #include "ui/CocosGUI.h"
 
