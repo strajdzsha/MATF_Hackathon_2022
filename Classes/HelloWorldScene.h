@@ -43,6 +43,7 @@ class HelloWorld : public cocos2d::Scene
     int betAmount = 100;
     Label* coinsLabel;
     Label* betLabel;
+    Label* wonLabel;
     Button* plusBet;
     Button* minusBet;
     

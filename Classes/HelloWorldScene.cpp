@@ -219,6 +219,7 @@ bool HelloWorld::init()
                                 usr.changeCoins(-betAmount);
                                 this->bettedAmount = this->betAmount;
                                 coinsLabel->setString("Coins: " + std::to_string(usr.getCoins()));
+                                wonLabel->setString("");
                             }
                             else
                             {
@@ -228,6 +229,12 @@ bool HelloWorld::init()
                                 slotMachine->outputReels();
                                 usr.changeCoins(slotMachine->calculateWin()/1000.0 * this->bettedAmount);
                                 coinsLabel->setString("Coins: " + std::to_string(usr.getCoins()));
+                                if(slotMachine->calculateWin()>0)
+                                {
+                                    wonLabel->setString("YOU WON: " + std::to_string((int)(slotMachine->calculateWin()/1000.0 * this->bettedAmount)));
+                                }
+                                //SlotMachine::busyWait(1.0);
+                                //wonLabel->setString("");
                             }
                             this->spin=!this->spin;
                             break;
@@ -250,6 +257,14 @@ bool HelloWorld::init()
     betLabel->setPosition(Vec2(visibleSize.width-3*marginX/2, marginY / 2));
     betLabel->setAlignment(TextHAlignment::LEFT);
     this->addChild(betLabel);
+    
+    //won
+    wonLabel = Label::createWithSystemFont("", "Helvetica", 30.0f);
+    wonLabel->setColor(Color3B::WHITE);
+    wonLabel->setPosition(Vec2(visibleSize.width/2, visibleSize.height - marginY/2));
+    wonLabel->setAlignment(TextHAlignment::LEFT);
+    this->addChild(wonLabel);
+
 
     //plus bet
     plusBet = ui::Button::create();
